@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Précision [C02_P2 : Analyse harmonique et étude des performances des SLCI]</title>
+		<meta charset="UTF-8" ></meta>
+		<meta name="generator" content="SCENARI 6.3.11 / OpaleExtEmeraude 24.1.0" ></meta>
+		<meta name="revision" content="2025-09-05 05:28" ></meta>
+		<link rel="start" href="module_Cours_C02_P2.html" title="C02_P2 : Analyse harmonique et étude des performances des SLCI" ></link>
+		<meta name="author" content="S. Lemasle
+" ></meta>
+		<meta name="keywords" content="" ></meta>
+		<meta name="date" content="2025" ></meta>
+		<meta name="viewport" content="width=device-width, initial-scale=1" ></meta>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" ></link>
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" ></link>
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"mf6e9rk5"};
+/*1*/ window.scLoadParams = {destUri:"/co/module_Cours_C02_P2_10.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:div.galFra");
+
+scImageMgr.registerSequence("des:div.seqFra");
+
+scImageMgr.registerSvg("des:svg");
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" ></link>
+		<meta name="robots" content="index,follow" ></meta>
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" ></link>
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" ></link>
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>C02_P2 : Analyse harmonique et étude des performances des SLCI</span></h1><nav role="navigation"><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" ></hr><section class="hBk article expUc"><h2 class="hBk_ti"><span>Précision</span></h2><div class="hBk_co "><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Rappels</span></h3><div class="hBk_co "><div class="iBk info"><h4 class="iBk_ti"><span>Erreur en régime permanent</span></h4><div class="iBk_co "><div class="rBk "><p>On considère un système asservi modélisé par le schéma-blocs suivant :</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/P2_precision_sch_bloc1.png" width="371" height="95" alt="" ></img></div></figure></div></div></div><div class="remind pBk noTitle"><h4 class="pBk_ti"><span><i class="type"><span class="label">Rappel</span></i><span class="hidden"> : </span><span class="title" ></span></span></h4><div class="pBk_co"><div class="rBk "><p>La précision qualifie l'aptitude du système à atteindre la valeur visée. Elle est caractérisée par l'erreur entre la consigne et la valeur effectivement atteinte par la grandeur de sortie en régime permanent, <strong class="txt_emp_is ">à condition que les grandeurs soient comparables</strong> (mêmes unités).</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\textit{Erreur en régime permanent : } \boxed{ \: \varepsilon_\infty= \lim_{t\rightarrow +\infty } \left[ \, e(t)-s(t) \, \right]} \]</span></div></figure></div></div></div><div class="remind pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Rappel</span></i><span class="hidden"> : </span><span class="title">Ecart en régime permanent</span></span></h4><div class="pBk_co"><div class="rBk "><p>Le calcul de l'erreur nécessite que les grandeurs d'entrée <span class="txt_mathtex_tl "><span>\(e(t)\)</span></span> et de sortie <span class="txt_mathtex_tl "><span>\(s(t)\)</span></span> soient comparables. Si ce n'est pas le cas, on utilise plutôt l'<strong class="txt_emp_is ">écart</strong> <span class="txt_mathtex_tl "><span>\(\epsilon(t)=u_e(t)-u_s(t)\)</span></span> en sortie du comparateur en régime permanent.</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\textit{Ecart en régime permanent : } \boxed{ \epsilon_{\infty} = \lim_{t\rightarrow +\infty } \left[ \, u_e(t)-u_s(t) \, \right]} 
+\]</span></div></figure></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Cas d'étude</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>On considère désormais un système à deux entrées : consigne et perturbation, modélisé par le schéma-blocs suivant :</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/P2_precision_sch_bloc2.png" width="441" height="113" alt="" ></img></div></figure></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_05cm.PNG" width="1" height="1" alt="" ></img></div></figure></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Afin que l'écart en sortie de comparateur soit l'image de l'erreur, on choisit un transducteur tel que <span class="txt_mathtex_tl "><span>\(T(p)=R(p)\)</span></span>. On peut dans ce cas modéliser le système par le schéma-blocs à retour unitaire suivant :</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/P2_precision_sch_bloc23_2023.png" width="356" height="94" alt="" ></img></div></figure></div><div class="rBk "><p>La réponse totale <span class="txt_mathtex_tl "><span>\(S(p)\)</span></span> s’obtient en superposant la réponse <span class="txt_mathtex_tl "><span>\(S_e(p)\)</span></span> à une consigne <span class="txt_mathtex_tl "><span>\(E(p)\)</span></span> et la réponse <span class="txt_mathtex_tl "><span>\(S_p(p)\)</span></span> à une perturbation <span class="txt_mathtex_tl "><span>\(P(p)\)</span></span> :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[S(p)=\underbrace{\frac{H(p)G(p)}{1+H(p)G(p)}E(p)}_{\substack{\text{Réponse  }\,S_e(p)\\ \text{à une consigne }E(p)}}+\underbrace{\frac{G(p)}{1+H(p)G(p)}P(p)}_{\substack{\text{Réponse  }\,S_p(p)\\ \text{à une perturbation }P(p)}}\]</span></div></figure></div><div class="rBk "><p>En remarquant que <span class="txt_mathtex_tl "><span>\(H(p)\cdot G(p)=FTBO(p)\)</span></span>, on peut réécrire la réponse totale S(p) sous la forme suivante :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[S(p)=\underbrace{\frac{FTBO(p)}{1+FTBO(p)}E(p)}_{\substack{\text{Réponse  }\,S_e(p)\\ \text{à une consigne }E(p)}}+\underbrace{\frac{G(p)}{1+FTBO(p)}P(p)}_{\substack{\text{Réponse  }\,S_p(p)\\ \text{à une perturbation }P(p)}}\]</span></div></figure></div><div class="rBk "><p>On rappelle qu'il existe deux modes de fonctionnement des systèmes asservis :</p><ul class="txt_il "><li class="txt_ili "><p>le mode suiveur, ou encore <strong class="txt_emp_is ">en poursuite</strong>, lorsque la sortie suit la consigne en l'absence de perturbations ;</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>le mode régulateur, ou <strong class="txt_emp_is ">en régulation</strong>, lorsque la sortie suit une consigne constante (généralement nulle) tout en rejetant les perturbations.</p></li></ul><p>La précision d'un système se détermine séparément en poursuite et en régulation.</p></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Précision en poursuite</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>La précision en poursuite est déterminée en supposant que la perturbation soit nulle : <span class="txt_mathtex_tl "><span>\(P(p)=0\)</span></span>.</p></div><div class="rBk "><p>L'erreur en poursuite est donnée par :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\varepsilon_p(p)=\left[E(p)-S(p)\right]_{P(p)=0}=E(p)-\frac{FTBO(p)}{1+FTBO(p)}E(p)
+\quad \Rightarrow \,
+ \varepsilon_p(p)=\frac{E(p)}{1+FTBO(p)}
+\]</span></div></figure></div><div class="rBk "><p>On pose alors :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[FTBO(p)=\dfrac {K_{BO}\,N(p)} {p^\alpha \, D(p)} \quad\text{avec }
+\left \{\begin{array}{l}
+K_{BO} \text{ : le gain statique de la FTBO}
+ \\
+\alpha \text{ : la classe de la FTBO}
+\\
+N(0)=D(0)=1
+\\
+ \end{array} \right .\]</span></div></figure></div><div class="rBk "><p>Ainsi :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\varepsilon_p(p)=\frac{p^\alpha\,D(p)\,E(p)}{p^\alpha\,D(p)+K_{BO}\,N(p)}\]</span></div></figure></div><div class="rBk "><p>Enfin, d'après le théorème de la valeur finale :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\varepsilon_{p\infty}=\lim\limits_{t\rightarrow\infty}\varepsilon_p(t)=\lim\limits_{p\rightarrow0}p\,\varepsilon_p(p)=\lim\limits_{p\rightarrow0}\dfrac{p^{\alpha+1}\,E(p)}{p^\alpha+K_{BO}}\]</span></div></figure></div></div></div><div class="basic pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Fondamental</span></i><span class="hidden"> : </span><span class="title">Erreur en poursuite</span></span></h4><div class="pBk_co"><div class="rBk "><p>L'erreur en poursuite d'un système est donnée par :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\,\varepsilon_{p\infty}=\lim\limits_{p\rightarrow0}\dfrac{p^{\alpha+1}\,E(p)}{p^\alpha+K_{BO}}\,} \quad \text{   avec }
+\left \{\begin{array}{l}
+K_{BO} \text{ : le gain statique de la FTBO}
+ \\
+\alpha \text{ : la classe de la FTBO (= nombre d'intégration)}
+\\
+ \end{array} \right .\]</span></div></figure></div><div class="rBk "><p>Le tableau suivant donne l'erreur statique et l'erreur de traînage en fonction de la classe de la FTBO :</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/P2_precision_tableau.png" width="531" height="181" alt="" ></img></div></figure></div><div class="rBk "><p><strong class="txt_emp_is ">Conclusion</strong> :</p><p>La présence d'intégrateurs dans la FTBO peut annuler l'erreur, et améliore donc la précision. La précision est donc directement liée à la classe de la FTBO.</p></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_05cm.PNG" width="1" height="1" alt="" ></img></div></figure></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Précision en régulation</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>La précision en régulation est déterminée en supposant que la consigne soit nulle : <span class="txt_mathtex_tl "><span>\(E(p) = 0\)</span></span>.</p></div><div class="rBk "><p>L'erreur en régulation est donnée par :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\varepsilon_r(p)=\left[E(p)-S(p)\right]_{E(p)=0}\quad \Rightarrow\, \varepsilon_r(p)=-\frac{G(p)\,P(p)}{1+H(p)G(p)}\]</span></div></figure></div><div class="rBk "><p>On pose cette fois-ci :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\begin{array}{c}
+
+H(p)=\dfrac {K_1\,N_1(p)} {p^{\alpha_1} \, D_1(p)} \quad\text{et}\quad    G(p)=\dfrac {K_2\,N_2(p)} {p^{\alpha_2} \, D_2(p)}  
+
+\\ 
+\\
+\quad\text{avec }
+
+
+\left \{\begin{array}{l}
+K_1\text{ et } K_2 \text{ : les gains statiques de } H(p) \text{ et } G(p)
+ \\
+\alpha_1 \text{ : la classe de } H(p) \quad \textit{(=nombre d'intégrations avant la perturbation)}
+\\
+\alpha_2 \text{ : la classe de } G(p) \quad \textit{(=nombre d'intégrations après la perturbation)}
+\\
+N_1(0)=N_2(0)=D_1(0)=D_2(0)=1
+\\
+ \end{array} \right .
+
+ \end{array} \]</span></div></figure></div><div class="rBk "><p>Ainsi :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\varepsilon_r(p)=-\frac{p^{\alpha_1}\,K_2\,N_2(p)\,D_1(p)}{p^{\alpha_1+\alpha_2} \, D_1(p) \, D_2(p)+K_1 \, K_2 \, N_1(p) \, N_2(p)} P(p)\]</span></div></figure></div><div class="rBk "><p>Enfin, d'après le théorème de la valeur finale :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\varepsilon_{r\infty}=\lim\limits_{t\rightarrow\infty}\varepsilon_r(t)=\lim\limits_{p\rightarrow0}p\,\varepsilon_r(p)=\lim\limits_{p\rightarrow0}-\frac{p^{\alpha_1+1}\,K_2}{p^{\alpha_1+\alpha_2} +K_1 \, K_2 } P(p)\]</span></div></figure></div></div></div><div class="iBk info"><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/BLANC_05cm.PNG" width="1" height="1" alt="" ></img></div></figure></div></div></div><div class="basic pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Fondamental</span></i><span class="hidden"> : </span><span class="title">Erreur en régulation</span></span></h4><div class="pBk_co"><div class="rBk "><p>Pour une perturbation de la forme <span class="txt_mathtex_tl "><span>\(P(p)=\frac{P_0}{p^r}\)</span></span> :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[ \boxed{\,\varepsilon_{r\infty}=\lim\limits_{p\rightarrow0}-\frac{p^{\alpha_1-r+1}\,K_2 \,P_0}{p^{\alpha_1+\alpha_2} +K_1 \, K_2 } \,}\]</span></div></figure></div><div class="rBk "><p>Trois cas sont alors à distinguer :</p><ul class="txt_il "><li class="txt_ili "><p>si <span class="txt_mathtex_tl "><span>\(\alpha_1&lt;r-1\)</span></span>, alors <span class="txt_mathtex_tl "><span>\(\varepsilon_{r\infty}=-\infty\)</span></span> ;</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>si <span class="txt_mathtex_tl "><span>\(\alpha_1=r-1\)</span></span>, alors <span class="txt_mathtex_tl "><span>\(\varepsilon_{r\infty}=-\dfrac{K_2\,P_0}{K_1\,K_2+1}\)</span></span> si <span class="txt_mathtex_tl "><span>\(\alpha_1+\alpha_2=0\)</span></span> ou <span class="txt_mathtex_tl "><span>\(\varepsilon_{r\infty}=-\dfrac{P_0}{K_1}\)</span></span> si <span class="txt_mathtex_tl "><span>\(\alpha_1+\alpha_2&gt;0\)</span></span> ;</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>si <span class="txt_mathtex_tl "><span>\(\alpha_1&gt;r-1\)</span></span>, alors <span class="txt_mathtex_tl "><span>\(\varepsilon_{r\infty}=0\)</span></span>.</p></li></ul></div><div class="rBk "><p><strong class="txt_emp_is ">Conclusions</strong> :</p><ul class="txt_il "><li class="txt_ili "><p>Seules les intégrations <strong class="txt_emp_is ">en amont de la perturbation</strong> ont une influence sur la précision, elles peuvent annuler l'erreur en fonction de la nature de la perturbation.</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>En particulier, pour une perturbation en échelon, un seul intégrateur en amont de la perturbation est suffisant pour annuler l'erreur. Ce point sera particulièrement pris en compte dans le <strong class="txt_emp_is ">choix du correcteur</strong>, objet du programme de deuxième année.</p></li></ul><ul class="txt_il "><li class="txt_ili "><p>Un système qui est précis en régulation est dit <strong class="txt_emp_is ">robuste</strong>.</p></li></ul></div></div></div></div></section><section class="hBk expUcDiv"><h3 class="hBk_ti"><span>Précision dans le cas général</span></h3><div class="hBk_co "><div class="iBk info"><div class="iBk_co "><div class="rBk "><p>Pour un système à deux entrées (consigne et perturbation), l'erreur dans le cas général <span class="txt_mathtex_tl "><span>\(\varepsilon_{T}\)</span></span> s'obtient en superposant l'erreur de poursuite <span class="txt_mathtex_tl "><span>\(\varepsilon_{p}\)</span></span> et l'erreur de régulation <span class="txt_mathtex_tl "><span>\(\varepsilon_{r}\)</span></span> :</p></div><div class="rBk res"><figure role="group" class="resInFlow latex"><div class="resInFlow_co "><span>\[\boxed{\, \varepsilon_{T}=\varepsilon_{p}+\varepsilon_{r} \,}\]</span></div></figure></div></div></div><div class="remark pBk"><h4 class="pBk_ti"><span><i class="type"><span class="label">Remarque</span></i><span class="hidden"> : </span><span class="title">Généralisation pour un système à n entrées</span></span></h4><div class="pBk_co"><div class="rBk "><p>Pour un système à <span class="txt_mathtex_tl "><span>\(n\)</span></span> entrées, l'erreur se détermine alors en superposant les erreurs obtenues vis-à-vis de chacune des <span class="txt_mathtex_tl "><span>\(n\)</span></span> entrées.</p></div></div></div></div></section></div></section></div></div><div id="navigation" tabindex="-1"><hr class="hidden" ></hr><nav class="pageTurner" role="navigation"><ul><li class="pagePrev"><a rel="prev" target="_self" href="module_Cours_C02_P2_9.html" class="btnNav prev" title="Précédent (Stabilité)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="module_Cours_C02_P2_11.html" class="btnNav next" title="Suivant (Rapidité)"><span>Suivant</span></a></li></ul></nav></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" role="navigation" tabindex="-1"><hr class="hidden" ></hr><ul class="mnu static" data-totalPages="11"><li class="sel_no anc_no type_l  dpt_0 obj"><div class="lbl type_l" id="module_Cours_C02_P2_1.html"><a href="module_Cours_C02_P2_1.html" target="_self" class="item"><span>Objectifs</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P2_2.html"><a href="module_Cours_C02_P2_2.html" target="_self" class="item"><span>Analyse harmonique des SLCI</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 ueDiv"><div class="lbl type_b" id="module_Cours_C02_P2_3.html"><a href="module_Cours_C02_P2_3.html" target="_self" class="item" type="up"><span>Étude des performances des SLCI</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P2_9.html"><a href="module_Cours_C02_P2_9.html" target="_self" class="item"><span>Stabilité</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P2_10.html"><span class="item"><span>Précision</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="module_Cours_C02_P2_11.html"><a href="module_Cours_C02_P2_11.html" target="_self" class="item"><span>Rapidité</span></a></div></li></ul></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" ></hr><nav class="headingSelector" role="navigation"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="module_Cours_C02_P2.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li></ul></nav></div></div></main><footer id="footer" tabindex="-1"><hr class="hidden" ></hr><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" ></img></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/* 0 */ tplMgr.init({accessBar:"none",themeMode:"none",addMenuBtn:false});
+/*]]>*/</script>
+		<script>/*<![CDATA[*/mathjaxMgr.init();/*]]>*/</script></body></html>
